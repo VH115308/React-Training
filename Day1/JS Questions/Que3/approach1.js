@@ -11,7 +11,7 @@ function fn(text){
     document.getElementById("result").textContent = text;
 }
 
-const debouncedFn = debounce(fn, 500);
+const debouncedFn = debounce(fn, 2000);
 
 document.getElementById("search").addEventListener("input", (e)=>{
     debouncedFn(e.target.value);

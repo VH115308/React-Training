@@ -21,7 +21,7 @@ function printTree(map, parentId, level){
     }
 }
 //
-const map = new Map();
+const map = new Map(); 
 const children = new Set();
 
 for(let item of arr){

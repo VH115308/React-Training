@@ -18,3 +18,5 @@ const groupedValues = users.reduce((acc, user)=>{
 }, {});
 
 console.log(groupedValues);
+
+// Try to avoid map, set, etc.

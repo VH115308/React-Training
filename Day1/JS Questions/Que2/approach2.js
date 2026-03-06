@@ -7,7 +7,12 @@ function flattenTheArray(arr){
 
     for(let item of arr){
         if(Array.isArray(item)){
-            flatArray = flatArray.concat(flattenTheArray(item));
+            try{
+                flatArray = flatArray.concat(flattenTheArray(item));
+            }
+            catch(e){
+                console.error("Error while flattening the array: ", e);
+            }
         }
         else{
             flatArray.push(item);

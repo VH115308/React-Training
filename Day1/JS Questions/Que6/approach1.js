@@ -27,7 +27,7 @@ function deepClone(value) {
     return clone;
 }
 
-
+// Put negative test cases
 const dateTest = new Date("2024-02-14T10:30:00");
 
 const objTest = {
@@ -52,6 +52,17 @@ console.log("Object Test: ", deepClone(objTest));
 // console.log("Array Test: ", deepClone(arrTest));
 
 let cloneArr = deepClone(arrTest);
+
+// Negative Testing
+//1
+console.log(deepClone(null));
+//2
+console.log(deepClone(undefined));
+//3
+console.log(deepClone("Testing"));
+//4
+console.log(deepClone(1));
+
 for(let i = 0; i < cloneArr.length; ++i){
     console.log(" Cloned: ", cloneArr[i]);
 }
