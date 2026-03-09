@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Market</title>
+    <link rel="stylesheet" href="approach1.css">
+</head>
+<body>
+    <header>
+        <h3>Fruit Market</h3>
+    </header>
+    <main class="container">
+        <!-- Search Functionality -->
+        <input type="text" id="searchInput" placeholder="Search fruits">
+        
+        <!-- Form Functionality -->
+        <div class="form">
+            <input type="text" id="fruitName" placeholder="Fruit Name">
+            <input type="text" id="fruitDescription" placeholder="Description">
+            <input type="text" id="fruitPrice" placeholder="Price">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <button id="toggleBtn">Toggle View</button>
+
+        <!-- Card or List View -->
+        <div id="productContainer" class="card-view"></div>
+    </main>
+    <script src="approach1.js"></script>
+</body>
+</html>
