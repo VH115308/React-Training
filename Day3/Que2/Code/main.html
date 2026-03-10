@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="page">
+            <div class="bitcount-prop-double-ink-title title">The clock is ticking. Make your move.⌛</div>
+            <button id="startBtn" onclick="startQuiz()">Start</button>
+        </div>
+        <div id="quiz" class="page">
+            <div id="progress"></div>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="feedback"></div>
+            <div id="timer"></div>
+        </div>
+        <div id="score-screen" class="page">
+            <h2>Your Score</h2>
+            <p id="final-score"></p>
+            <span id="confetti"></span>
+            <button id="restartBtn">Restart</button>
+            <button onclick="showHighestScore()">Show highest score</button>
+            <span id="highest-score"></span>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

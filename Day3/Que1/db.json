@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "id":1,
+            "question": "What is JavaScript?",
+            "answer": "JavaScript is a programming language used to build dynamic web applications. "
+        },
+        {
+            "id":2,
+            "question": "What is React?",
+            "answer": "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of their applications efficiently."
+        },
+        {
+            "id":3,
+            "question": "What is Node.js?",
+            "answer": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript on the server side, enabling them to build scalable and high-performance applications."
+        }
+    ]
+}
