@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    flex: 1;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column h3 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+/* Highlight column when dragging over */
+.column.drag-over {
+  background-color: #f0f8ff;   /* light blue highlight */
+  transition: background-color 0.2s ease;
+}
+
+.task {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task.dragging {
+    opacity: 0.5;
+}
+
+.task button {
+    margin-left: 5px;
+    border: none;
+    background: #d9534f;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.task button.edit {
+    background: #5bc0de;
+}
+
+.add-task {
+    margin-top: auto;
+    text-align: center;
+}
+
+.add-task input {
+    width: 70%;
+    padding: 5px;
+}
+
+.add-task button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
