@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Dynamic Form Builder</h1>
+    </div>
+    <div class="container">
+      <div class="col1">
+        <div class="inputContainer">
+          <div class="typeContainer">
+            <label>
+              <input type="radio" name="typeOption" value="text" checked />Text
+            </label>
+            <label>
+              <input type="radio" name="typeOption" value="dropdown" />Dropdown
+            </label>
+            <label>
+              <input type="radio" name="typeOption" value="checkbox" />Checkbox
+            </label>
+            <label>
+              <input type="radio" name="typeOption" value="date" />Date
+            </label>
+            <button class="buildFormBtn">Build Form</button>
+          </div>
+
+          <div class="formContainer"></div>
+        </div>
+        <div class="resultFormContainer"></div>
+      </div>
+      <div class="col2">
+        <h2>Saved Forms</h2>
+        <div class="savedFormsContainer"></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
