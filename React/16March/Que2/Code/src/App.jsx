@@ -1,12 +1,12 @@
-import Counter from './components/Counter';
+import ListManager from './components/ListManager';
 import './App.css';
 
 function App(){
   return (
     <div>
-      <Counter/>
+      <ListManager/>
     </div>
-  )
+  );
 }
 
 export default App;

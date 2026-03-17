@@ -1,0 +1,33 @@
+.counter-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+button {
+  background-color: #4caf50; /* green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
