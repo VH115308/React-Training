@@ -1,0 +1,30 @@
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 3000px; /* 10 columns × 300px */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  width: 300px;
+  text-align: center;
+  padding: 8px;
+}
+
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 0 2px;
+  padding: 5px 10px;
+}
+
+.pagination input {
+  margin-left: 10px;
+  padding: 5px;
+  width: 100px;
+}
