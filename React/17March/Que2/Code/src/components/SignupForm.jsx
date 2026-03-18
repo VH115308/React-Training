@@ -30,7 +30,7 @@ const SignupForm = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  const handleBlur = (e) => {
+  const handleLeave = (e) => {
     setTouched({ ...touched, [e.target.name]: true });
     setErrors(validate());
   };
@@ -56,7 +56,7 @@ const SignupForm = () => {
           placeholder="Name"
           value={values.name}
           onChange={handleChange}
-          onBlur={handleBlur}
+          onBlur={handleLeave}
         />
         {touched.name && errors.name && <div className="error">{errors.name}</div>}
 
@@ -65,7 +65,7 @@ const SignupForm = () => {
           placeholder="Email"
           value={values.email}
           onChange={handleChange}
-          onBlur={handleBlur}
+          onBlur={handleLeave}
         />
         {touched.email && errors.email && <div className="error">{errors.email}</div>}
 
@@ -75,7 +75,7 @@ const SignupForm = () => {
           placeholder="Password"
           value={values.password}
           onChange={handleChange}
-          onBlur={handleBlur}
+          onBlur={handleLeave}
         />
         {touched.password && errors.password && (
           <div className="error">{errors.password}</div>
